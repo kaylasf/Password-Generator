@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid mainContainer d-flex">
+
+
+
+        <div class="jumbotron text-center w-100 my-auto h-85 p-0 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="display-4">Password Generator</h1>
+                        <p>Using your pets name for every site just isn't cuttin' it anymore.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- PW-INPUT FORM -->
+                <form>
+                    <div class="form-group">
+
+                        <!-- PASSWORD LENGTH SLIDER -->
+                        <div class="slidecontainer">
+                            <label class="lead" for="formControlRange">Password Length</label>
+
+                            <input class="form-control-range" type="range" min="8" max="128" value="16" class="slider"
+                                id="pwRange">
+                            <p class="lead">Value: <span class="lead" id="pwLength"></span></p>
+                        </div>
+
+
+                        <!-- CHECKBOX OPTIONS -->
+                        <div class="text-justify">
+
+
+                            <!-- special character -->
+                            <div class="form-check mt-1 mb-1">
+                                <input class="form-check-input toggler" type="checkbox" id="Check1" value="t" onclick="checkBoxClick(this)" checked>
+                                <label class="form-check-label lead  mb-1" for="Check1">
+                                    Special Characters
+                                </label>
+                            </div>
+
+                            <!-- numeric characters -->
+                            <div class="form-check mt-1 mb-1">
+                                <input class="form-check-input toggler" type="checkbox" id="Check2" value="t" onclick="checkBoxClick(this)" checked>
+                                <label class="form-check-label lead  mb-1" for="Check2">
+                                    Numeric Characters
+                                </label>
+                            </div>
+
+                            <!-- lowercase characters -->
+
+                            <div class="form-check mt-1 mb-1">
+                                <input class="form-check-input toggler" type="checkbox" id="Check3" value="t" onclick="checkBoxClick(this)" checked>
+                                <label class="form-check-label lead mb-1" for="Check3">
+                                    Lowercase Characters
+                                </label>
+                            </div>
+
+
+                            <!-- uppercase characters -->
+                            <div class="form-check mt-1 mb-1">
+                                <input class="form-check-input toggler" type="checkbox" id="Check4" value="t" onclick="checkBoxClick(this)" checked>
+                                <label class="form-check-label mb-1 lead" for="Check4">
+                                    Uppercase Characters
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-secondary btn-lg btn-block "
+                        id="submit">Submit</button>
+                </form>
+
+
+
+                <!-- PW-OUTPUT -->
+                <div class="row text-center">
+                    <div class="col-12">
+                        <p class=" mx-auto lead" id="newPass"> Your New Password</p>
+                    </div>
+                    <div class="col-12">
+                        <div id="pwOutput" onclick="lightUp()">
+                            <p class="lead">Well Hi hi hello</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
