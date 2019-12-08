@@ -46,7 +46,8 @@
 
                             <!-- special character -->
                             <div class="form-check mt-1 mb-1">
-                                <input class="form-check-input toggler" type="checkbox" id="Check1" value="t" onclick="checkBoxClick(this)" checked>
+                                <input class="form-check-input toggler" type="checkbox" id="Check1" value="t"
+                                    onclick="checkBoxClick(this)" checked>
                                 <label class="form-check-label lead  mb-1" for="Check1">
                                     Special Characters
                                 </label>
@@ -54,7 +55,8 @@
 
                             <!-- numeric characters -->
                             <div class="form-check mt-1 mb-1">
-                                <input class="form-check-input toggler" type="checkbox" id="Check2" value="t" onclick="checkBoxClick(this)" checked>
+                                <input class="form-check-input toggler" type="checkbox" id="Check2" value="t"
+                                    onclick="checkBoxClick(this)" checked>
                                 <label class="form-check-label lead  mb-1" for="Check2">
                                     Numeric Characters
                                 </label>
@@ -63,7 +65,8 @@
                             <!-- lowercase characters -->
 
                             <div class="form-check mt-1 mb-1">
-                                <input class="form-check-input toggler" type="checkbox" id="Check3" value="t" onclick="checkBoxClick(this)" checked>
+                                <input class="form-check-input toggler" type="checkbox" id="Check3" value="t"
+                                    onclick="checkBoxClick(this)" checked>
                                 <label class="form-check-label lead mb-1" for="Check3">
                                     Lowercase Characters
                                 </label>
@@ -72,7 +75,8 @@
 
                             <!-- uppercase characters -->
                             <div class="form-check mt-1 mb-1">
-                                <input class="form-check-input toggler" type="checkbox" id="Check4" value="t" onclick="checkBoxClick(this)" checked>
+                                <input class="form-check-input toggler" type="checkbox" id="Check4" value="t"
+                                    onclick="checkBoxClick(this)" checked>
                                 <label class="form-check-label mb-1 lead" for="Check4">
                                     Uppercase Characters
                                 </label>
@@ -88,11 +92,15 @@
                 <!-- PW-OUTPUT -->
                 <div class="row text-center">
                     <div class="col-12">
-                        <p class=" mx-auto lead" id="newPass"> Your New Password</p>
+                        <p class=" mx-auto lead"> Your New Password</p>
                     </div>
                     <div class="col-12">
                         <div id="pwOutput" onclick="lightUp()">
-                            <p class="lead">Well Hi hi hello</p>
+
+                            <div class="code-bg" id="divClipboard">
+                                <p class="lead" id="newPass"> </p>
+                            </div>
+                            <button  class="mb-4" type="button" onclick="copyClipboard()">Copy text</button> 
                         </div>
                     </div>
                 </div>
