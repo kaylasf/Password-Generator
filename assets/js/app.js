@@ -107,49 +107,10 @@ document.getElementById("submit").addEventListener("click", function (event) {
     console.log(slideInput, wantSpec, wantNum, wantLow, wantUp)
     createPassword(slideInput, wantSpec, wantNum, wantLow, wantUp)
 
-    //  var checkedItems = document.getElementsByClassName('checked')
+
 
 });
 
-// SUBMIT BUTTON FUNCTIONALITY //
-
-
-//    var count = <Int>
-//    var reqUpper = <bool>
-//    var reqLower = <bool>
-//    var reqInt = <bool>
-//    var reqChar = <bool>
-//    var newPassword = function makePassword(count, reqUpper, reqLower, reqInt, reqChar): {
-//      make password logic
-//      return password
-//    }
-// Make password logic:
-// 1. If 'req' vars are true, store them in an array.
-// 2. Create empty array to store new password characters in.
-// 3. Run a for loop where it should loop the amount of characters the user input specified.
-// 4. In each iteration, randomly select a value from the frist array you created with the 'req' vars.
-// 5. Say if you randomly pick Upper, you will then randomly choose an uppercase letter and store it in the empty array.
-// 6. Once this is done, combine the items in the array to make one password and display that to the user.
-
-// $('#checkbox-value').text($('#checkbox1').val());
-
-// $("#checkbox1").on('change', function() {
-//   if ($(this).is(':checked')) {
-//     $(this).attr('value', 'true');
-//   } else {
-//     $(this).attr('value', 'false');
-//   }
-
-//   $('#checkbox-value').text($('#checkbox1').val());
-// });
-
-
-// var t
-
-// function copyChange() {
-//     lightUp()
-//     t = setTimeout("stop()", 3000);
-// }
 
 
 function lightUp() {
@@ -158,19 +119,7 @@ function lightUp() {
  
 
 }
-    // function stop() {
-    //     clearTimeout(t)
-    // }
-
-
-
-
-
-    // function changeBack() {
-    //     document.getElementById("pwdOutput").style.color = "black"
-    // }
-
-
+ 
 
     function copyClipboard() {
 
